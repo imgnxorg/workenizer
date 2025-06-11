@@ -1,0 +1,43 @@
+{
+  "name": "workenizer",
+  "displayName": "Workenizer",
+  "description": "🎸 Automatically arranges VS Code workspace folders into row-based source + preview layouts. For those about to rock... we salute your layout.",
+  "version": "2.0.0",
+  "publisher": "@imgnx",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+      "Visualization",
+      "Other"
+  ],
+  "activationEvents": [
+    "onCommand:workenizer.arrangeRows"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "workenizer.arrangeRows",
+        "title": "Workenizer: Arrange Workspace as Rows"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "workenizer.arrangeRows",
+        "key": "cmd+shift+l",
+        "mac": "cmd+shift+l",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/vscode": "^1.85.0",
+    "vsce": "^2.15.0"
+  }
+}
