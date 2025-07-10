@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "name": "Zsh", "path": "/Users/donaldmoore/config/zsh" },
+    {
+      "name": "Workenizer",
+      "path": "."
+    }
+  ]
+}
